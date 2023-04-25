@@ -3,27 +3,27 @@
 
 <head>
   <title>Todo App</title>
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
 </head>
 
 <body>
-  <div class="todo-app__container">
-    <div class="todo-app__description">
-      <img class="todo-app__image" src="./eisenhower-matrix.jpg">
+  <section class="todo-app__container">
+    <aside class="todo-app__description">
+      <img class="todo-app__image" src="./eisenhower-matrix.jpg" alt="The Eisenhower matrix">
       <a class="todo-app__link app-description__link more_inf"
         href="https://goal-life.com/page/method/matrix-eisenhower">Want more
         details?
       </a>
-    </div>
-    <div class="todo-app__controller centered-main-page-element">
-      <p class="">
+    </aside>
+    <section class="todo-app__controller centered-main-page-element">
+      <div class="">
         <label class=" new-task__label" for="new-task">Add Item</label>
-      <div class="todo-input__wrapper">
-        <input id="new-task" class="todo-app__input-task task" type="text">
-        <button class="todo-app__button button">Add</button>
+        <div class="todo-input__wrapper">
+          <input id="new-task" class="todo-app__input-task task" type="text">
+          <button class="todo-app__button button">Add</button>
+        </div>
       </div>
-      </p>
       <h3 class="todo-app__heading heading">Todo</h3>
       <ul class="todo-app__list" id="incomplete-tasks">
         <li class="todo-app__item">
@@ -32,7 +32,7 @@
           <input class="todo-app__input task" type="text">
           <button class="todo-app__button button edit">Edit</button>
           <button class="todo-app__button button delete">
-            <img class="todo-app__icon" src="./remove.svg">
+            <img class="todo-app__icon" src="./remove.svg" alt="">
           </button>
         </li>
         <li class="todo-app__item edit-mode edit-mode">
@@ -41,7 +41,7 @@
           <input class="todo-app__input edit-mode__input task" type="text" value="Go Shopping">
           <button class="todo-app__button button edit">Save</button>
           <button class="todo-app__button button delete">
-            <img class="todo-app__icon" src="./remove.svg">
+            <img class="todo-app__icon" src="./remove.svg" alt="">
           </button>
         </li>
       </ul>
@@ -49,16 +49,16 @@
       <ul class="todo-app__list" id="completed-tasks">
         <li class="todo-app__item">
           <input class="todo-app__checkbox" type="checkbox" checked>
-          <label class="todo-app__label  completed-tasks__label task">See the Doctor</label>
-          <input class="todo-app__input" type="text" class="task">
+          <label class="todo-app__label edit-mode__label task">See the Doctor</label>
+          <input class="todo-app__input edit-mode__input task" type="text" class="task">
           <button class="todo-app__button button edit">Edit</button>
           <button class="todo-app__button button delete">
-            <img class="todo-app__icon" src="./remove.svg">
+            <img class="todo-app__icon" src="./remove.svg" alt="">
           </button>
         </li>
       </ul>
-    </div>
-  </div>
+    </section>
+  </section>
   <script src="app.js"></script>
 </body>
 
