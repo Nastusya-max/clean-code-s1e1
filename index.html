@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
 </head>
 
-<body>
+<body class="page">
   <header class="header">
     <h1 class="header__title" hidden>Todo App</h1>
     <img class="header__image" src="./eisenhower-matrix.jpg" alt="The Eisenhower matrix">
@@ -20,7 +20,7 @@
     <section class="main__section section-new-task">
       <h2 class="section-new-task__heading section__heading heading">Add Item</h2>
       <div class="section-new-task__input-wrapper">
-        <input class="section-new-task__input" id="new-task-input" type="text">
+        <input class="section-new-task__input input" id="new-task-input" type="text">
         <button class="section__button button">Add</button>
       </div>
     </section>
@@ -29,18 +29,18 @@
       <h2 class="section__heading heading">Todo</h2>
       <ul class="section__list" id="todo-tasks-list">
         <li class="section__item">
-          <input class="item__input-checkbox" type="checkbox">
+          <input class="item__input-checkbox input" type="checkbox">
           <label class="item__label">Pay Bills</label>
-          <input class="item__input-text" type="text">
+          <input class="item__input-text input" type="text">
           <button class="section__button button button-edit">Edit</button>
           <button class="section__button button button-delete">
             <img class="button-delete__icon" src="./remove.svg" alt="Delete item">
           </button>
         </li>
         <li class="section__item edit-mode">
-          <input class="item__input-checkbox" type="checkbox">
+          <input class="item__input-checkbox input" type="checkbox">
           <label class="item__label">Go Shopping</label>
-          <input class="item__input-text" type="text" value="Go Shopping">
+          <input class="item__input-text input" type="text" value="Go Shopping">
           <button class="section__button button button-edit">Save</button>
           <button class="section__button button button-delete">
             <img class="button-delete__icon" src="./remove.svg" alt="Delete item">
